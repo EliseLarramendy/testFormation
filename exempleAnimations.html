@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animations</title>
+    <style>
+     div{
+            width: 500px;
+            height: 100px;
+            background-color: chartreuse;
+            border: 3px solid blue;
+        }
+    #a1{
+        animation-name: couleur;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+
+    #a2 {
+        animation: bougeDeLa 10s ease 0s infinite;
+
+    }
+    @keyframes couleur {
+        from {background-color: orange;}
+        25%{background-color: blue; width: 200px;}
+        60%{background-color: cyan; width: 400px;}
+        to {background-color: chartreuse;}
+    }
+    @keyframes bougeDeLa {
+        from {
+            transform: translateX(400px);
+
+        }
+        25% {
+            transform: rotate(75deg);
+        }
+        50%{
+            transform: translateY(200px);
+        }
+        75%{
+            transform: translate(-100px; -150px);
+        }
+        to {
+            transform: rotate(150deg);
+
+        }
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="a1"> animation 1</div>    
+    <div id="a2"> animation 2</div>    
+</body>
+</html>

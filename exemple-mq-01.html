@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .conteneur-flex {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            background-color: blue;
+        }
+
+        .element-flex {
+            flex: 0 1 20%;
+            background-color: green;
+            height: 50px;
+            margin: 10px;
+        }
+
+        @media screen and (max-width: 780px) {
+            .conteneur-flex {
+                flex-flow: column wrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteneur-flex">
+        <div class="element-flex">1</div>
+        <div class="element-flex">2</div>
+        <div class="element-flex">3</div>
+      </div>
+</body>
+
+</html>

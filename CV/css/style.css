@@ -1,0 +1,24 @@
+body{
+    display: flex;
+}
+
+#navigation{
+    background-color: darkblue;
+    color: ivory;
+    width: 30%;
+    height: 100%;
+    padding: 5px;
+    position: left;
+}
+
+figure {
+    background-color: darkblue;
+    width: 30%;
+    display: flex;
+}
+
+img{
+    flex: 1 1 100%;
+    position: center;
+    background-color: darkblue;
+}

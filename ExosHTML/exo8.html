@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire d'inscription</title>
+    <style>
+    label {
+        width:150px;
+        display: inline-block;
+    }
+    </style>
+</head>
+<body>
+    <header> <h1>Le formulaire d'inscritpion</h1></header>
+    <section>
+        <form method="GET">
+            <fieldset>
+            <legend> Formulaire d'inscription</legend>
+            <label>Nom</label>
+            <input name="Nom" type="text" placeholder="saisir votre nom" parttern=[a-zA-Z]/><br/>
+            <label>Prénom :</label>
+            <input name="Prénom" type="text" placeholder="saisir votre prénom"/><br/>
+            <label>Email :</label>
+            <input name="Email" type="text" placeholder="saisir votre Email"/><br/>
+            <label>Sexe</label>
+            <input type="radio" id="sexe1" name="sexe" value="masculin" checked="checked"/>
+            <label for="sexe1">Masculin</label>
+            <input type="radio" id="sexe2" name="sexe" value="feminin"/>
+            <label for="sexe2"> Féminin</label> <br/>
+            <label> Photo</label>
+            <input type="file" value="Choisir un fichier" accept="image/png, image/jpeg"/> <br/>
+            <label for="pays"> Pays</label>
+            <select id="pays" name="pays">
+                <option value=""> Choisir le pays</option>
+                <option value="france">France</option>
+                <option value="espagne">Espagne</option>
+                <option value="portugal">Portugal</option>
+                <option value="italie">Italie</option>
+                <option value="suisse">Suisse</option>
+                <option value="luxembourg">Luxembourg</option>
+            </select> <br/>
+            <label for="langage">Les langages préférés</label>
+            <select name="langage" size="4" multiple>
+                <option value="java">Java</option>
+                <option value="c">C</option>
+                <option value="c++">C++</option>
+                <option value="php">PHP</option>
+                <option value="python">Python</option>
+            
+            </select>
+            (Pour faire plusieurs choix maintenir la touche CTRL enfoncée)<br/>
+            <label for="domaine"> Domaines d'activités</label>
+            <input type="checkbox" name="domaine" value="informatique"/>
+            <label for="informatique">Informatique</label>
+            <input type="checkbox" name="domaine" value="gestion">
+            <label for="gestion">Gestion</label>
+            <input type="checkbox" name="domaine" value="pedagogie"/>
+            <label for="pedagogie">Pédagogie</label> <br/>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Annuler">
+
+
+        </fieldset>
+        </form>
+    </section>
+
+</body>
+</html>

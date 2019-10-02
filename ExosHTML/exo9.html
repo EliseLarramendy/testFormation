@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validation d'un formulaire</title>
+    <style>
+    input:valid  {
+        background-color: green;
+        color:white;
+    }
+    
+    input:invalid {
+        background-color: red;
+        color:white;
+    }
+    
+    </style>
+</head>
+<body>
+    <header><h1>Validation d'un formulaire</h1></header>
+    <section>
+        <form>
+            <input type="email" name="email" placeholder="Email" pattern=".*david\.fr$" required/>
+            <br/>
+            <input type="password" name="password" placeholder="Password" maxlenght="8" pattern="(?=.*[A-Za-z])(?=.*\d)\w{6,8}" required/>
+            <br/><br/>
+            <input type="submit" name="Envoyer" value="Envoyer"/>
+        </form>
+    </section>
+    
+</body>
+</html>

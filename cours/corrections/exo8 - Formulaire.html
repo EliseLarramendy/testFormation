@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<title>formulaire Inscription</title>
+	<!-- <style>
+		td{
+			height: 40px;
+		}
+		input[type="text"] {
+			width: 500px;
+			height: 40px;
+			background-color: aquamarine;
+		}
+		input[type="text"]:disabled {			
+			background-color: gray;
+		}
+		input[type="text"]:focus {			
+			background-color: cyan;
+			border: 1px solid blue;
+			box-shadow: 1px 1px 1px 1px grey inset;
+		}
+		
+		input[type="submit"] {
+			border-radius: 50%;
+			height: 50px;
+		}
+	</style> -->
+</head>
+<body>
+	<form>
+
+		<fieldset>
+			<legend>Formulaire d'inscription</legend>
+			<!-- La balise Table pour formater l'affichage du formulaire -->
+			<table>
+				<tr>
+					<td><label>Nom</label></td>
+					<td><input type="text"  name="nom" placeholder="saisir votre nom" /> </td>
+				</tr>
+				<tr>
+					<td><label>Prenom</label></td>
+					<td><input type="text" name="prenom" placeholder="saisir votre prenom"/></td>
+				</tr>
+				<tr>
+					<td><label>Email</label></td>
+					<td><input type="email" name="email" placeholder="saisir votre Email"/></td>
+				</tr>
+				<tr>
+					<td>Sexe</td>
+					<!-- Les deux inputs radio doivent avoir le meme nom -->
+					<td>
+						Masculin <input type="radio" name="sexe" value="M" checked="checked">
+						Féminin <input type="radio" name="sexe" value="F">
+					</td>
+				</tr>
+				<tr>
+					<!-- Pour réstreindre le type des fichiers on utilise l'attribut "accept" -->
+					<td><label>Photo</label></td>
+					<td><input type="file" accept="image/jpeg,image/png" name="fichier"></td>
+				</tr>
+				<tr>
+					<td><label>Pays</label></td>
+					<td>
+						<select name="pays">
+								<option></option>
+						<option>France</option>
+						<option>Espagne</option>
+						<option>Italie</option>
+					</select>
+				</td>
+				</tr>
+				<tr>
+                    <!-- l'utilisation l'attribut multiple permet le choix de plusieurs valeurs des options -->
+					<td>Les langages préferés </td>
+					<td><select multiple="multiple" size="5" name="langage">
+						<option>Java</option>
+						<option>C</option>
+						<option>C++</option>
+						<option>PHP</option>
+						<option>HTML</option>
+					</select>   (Pour faire plusieurs choix maintenir la touche CTRL enfoncée)</td>
+				</tr>
+				
+				<tr>
+					<td><label>Domaines d'actvités</label></td>
+					<td><input type="checkbox" name="domaine" value="info"> Informatique 
+						<input type="checkbox" name="domaine" value="gestion"> Gestion 
+						<input type="checkbox" name="domaine" value="pedagogie"> Pédagogie</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" />  <input type="reset" value="Annuler"/></td>
+				</tr>
+			</table>
+		</fieldset>
+
+</body>
+</html>

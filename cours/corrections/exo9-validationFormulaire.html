@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<title>th</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+   /* Attribuer une couleur verte aux champs correctement remplis */
+	input:valid {
+  	background-color: #ddffdd;
+	}      
+	#password {
+  	display: none;
+	} 
+	input:invalid {
+  	background-color: #e73609;
+	  color: white;
+	}  
+	input:invalid ~ #password {
+		display: block;
+	}
+
+	</style>
+</head>
+<body>
+	<form>
+		<p>
+		<input type="email" placeholder="Email" pattern=".*david\.fr$" required="required"/>
+		</p>
+		<p>
+			<!-- input de type password qui contient entre 6 et 8 caractères dont au moins un caractère est impérativement un chiffre. -->
+		<input type="password" placeholder="Password" maxlength="8" pattern="(?=.*\d)(?=.*[a-z])\w{6,8}" required="required">
+		</p>
+		<input type="submit" value="Envoyer">
+		<div id="password">
+			<p> infos password</p>
+		</div>
+	</form>
+	
+</body>
+</html>

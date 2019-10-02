@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positionnement Float</title>
+    <style>
+        div {
+            text-align: center;
+        }
+
+
+        #contener {
+            width: 950px;
+            height: 50px;
+            margin: 10px auto;
+            background-color: lightskyblue;
+
+        }
+
+        #entete {
+            background-color: inherit;
+        }
+
+        #menu {
+            float: left;
+            width: 250px;
+        }
+
+        #menuA {
+            background-color: lightseagreen;
+            width: 250px;
+            height: 200px;
+        }
+
+        #menuB {
+            background-color: lightgrey;
+            width: 250px;
+            height: 200px;
+        }
+
+        #contenu {
+            height: 400px;
+            
+           background-color: aquamarine;
+            
+
+        }
+        #infos{
+            width: 100px;
+            height: 100px;
+            background-color:blue;
+            z-index:1;
+            display: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        #pied {
+            height: 50px;
+            background-color: aliceblue;
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contener">
+        <div id="entete">Ceci est mon en-tête.</div>
+        <div id="menu">
+            <div id="menuA">Ceci est mon menu haut</div>
+            <div id="menuB">Ceci est mon menu bas</div>
+        </div>
+        <div id="contenu">Ceci est mon contenu.
+            <div id="infos">Infos</div>
+        </div>
+        
+        <div id="pied">Ceci est mon pied de page.</div>
+    </div>
+
+</body>
+
+</html>

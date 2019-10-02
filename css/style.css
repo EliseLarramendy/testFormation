@@ -1,0 +1,35 @@
+section {
+    background-color: darkred;
+    border: 30px lightcoral solid;
+    color: ivory;
+    height: 100px;
+    margin-bottom: 20px;
+    margin: 100px 50px 20px 10px;
+    border-radius: 10px 20px 0px 5px;
+
+}
+p{
+    white-space: normal;
+}
+
+ul {
+    list-style-position: outside;
+    list-style-type: circle;
+}
+div{
+    border: 1px solid black;
+    background-color: aquamarine;
+    /* margin: auto;
+    margin-top: 20px; */
+    width: 300px;
+    height: 150px;
+    padding-top:50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    overflow:auto;
+    top: 50%;
+    left:50%;
+    transform:translateY(-50%) translateX(-50%);
+    position: absolute;
+}

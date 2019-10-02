@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .conteneur-flexible {
+            width: 80%;
+            height: 500px;
+            margin: 10px auto;
+            background-color: chocolate;
+            color: cornsilk;
+            border: 2px dashed beige;
+            display: flex;
+            box-sizing: border-box;
+            /* flex-direction: row;
+            flex-wrap:wrap; */
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .element-flexible {
+            flex: 0 0 20%;
+            flex-basis: 20%;
+            width: 35%;
+            height: 20%;
+            background-color: lightsalmon;
+            border: 1px solid brown;
+            margin: 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 5px;
+
+        }
+
+        /* .plusGrand {
+            flex: 0 0 80%;
+
+        } */
+
+        /* .num1 {
+            order: 1;
+        }
+
+        .num2 {
+            order: 2;
+        }
+
+        .num3 {
+            order: 3;
+        } */
+
+        /* .fg1 {
+            flex-grow: 1;
+        }
+
+        .fg3 {
+            flex-grow: 3;
+        } */
+
+        /* .ef70 {
+            flex-basis: 70%;
+        }
+
+        .fs0 {
+            flex-shrink: 0;
+        }
+
+        .fs1 {
+            flex-shrink: 1;
+        }
+
+        .fs4 {
+            flex-shrink: 4;
+        } */
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="conteneur-flexible">
+        <div class="element-flexible plusGrand num2 fs1">1</div>
+        <div class="element-flexible num3 fg1 fs4">2</div>
+        <div class="element-flexible num1 ef70 fs0">3</div>
+        <div class="element-flexible num2 fg3 fs1">4</div>
+    </div>
+
+</body>
+
+</html>

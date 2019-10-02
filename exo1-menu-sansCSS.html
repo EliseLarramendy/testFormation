@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <title>Document</title>
+    <style>
+
+      h1{
+        font-size: 2em;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+      }
+
+
+      nav li a{
+        text-decoration: none;
+        color: black;
+        display: block;
+        width: 100%;
+        padding: 10px auto;
+        border-bottom: 2px solid transparent;
+        /* permet d'éviter d'avoir le décalage du texte quand la souris est sur un des éléments du menu */
+      }
+      nav>ul>li{
+        list-style: none;
+        width: 25%;
+        float: left;
+        text-align: center;
+            }
+
+      nav>ul>li>a:hover{
+        font-size: 1.2em;
+        border-bottom: 2px solid red;
+        color:pink;
+      }
+      nav{
+        margin: 10px auto 40px auto;
+        position: sticky;
+        top: 10px;
+        z-index: 1000;
+        /* permet de garder le menu en haut de l'écran, sans chevauchement */
+      }
+     nav ul:after {
+       content: "";
+       display: block;
+        clear: both;
+      }
+
+      .sous {
+        position: absolute;
+        /* en mettant le bloc en position absolute, il sort du flux HTML et évite que le texte du corps de texte ne bouge de position en permanence */
+        width: 25%;
+        background-color: white;
+        z-index: 2000;
+        display: none;
+        
+      }
+
+      .deroulant:hover .sous {
+        display: block;
+      }
+
+      .sous a:hover{
+        font-weight: bold;
+      }
+      .sous li {
+        border: 1px lightslategray dotted;
+      }
+
+      .sous li:last-child {
+        border-radius: 0 0 5px 5px;
+      }
+       
+    </style>
+</head>
+
+<body>
+
+        <h1>Menu déroulant HTML et CSS</h1>
+        <nav>
+          <ul>
+            <li class="deroulant"><a href="#">HTML 5 & CSS 3</a>
+              <ul class="sous">
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#">Les positions</a></li>
+                <li><a href="#">Les animations</a></li>
+              </ul>
+            </li>
+            <li class="deroulant"><a href="#">JavaScript</a>
+              <ul class="sous">
+                <li><a href="#">les variables</a></li>
+                <li><a href="#">les boucles</a></li>
+                <li><a href="#">les fonctions</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">A propos</a></li>
+          </ul>
+        </nav>    <div class="conteneur">
+          <p>Vous me voyez toujours ???</p>
+        </div>
+     
+    </div>
+</body>
+
+</html>

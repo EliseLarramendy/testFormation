@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*Ici, notre design principal commrespond à la présentation qu'on souhaite avoir sur mobile*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .conteneur-flex {
+            display: flex;
+            flex-flow: column wrap;
+            margin: 10px;
+        }
+
+        .sous-conteneur-flex {
+            flex: 1 1 auto;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            background-color: RGBa(120, 150, 240, 1);
+            margin: 0px 0px 20px 0px;
+        }
+
+        .element-flex {
+            flex: 1 1 auto;
+            background-color: RGBa(120, 240, 150, 0.7);
+            height: 50px;
+            margin: 10px;
+        }
+
+        /*Styles spécifiques pour les écrans de taille moyenne type tablette*/
+        @media screen and (min-width: 780px) and (max-width: 979px) {
+            .conteneur-flex {
+                flex-flow: row wrap;
+            }
+
+            .sous-conteneur-flex {
+                margin: 0px 10px;
+            }
+        }
+
+        /*Styles spécifiques pour les grands écrans type écrans d'ordinateur*/
+        @media screen and (min-width: 980px) {
+            .conteneur-flex {
+                flex-flow: row wrap;
+            }
+
+            .sous-conteneur-flex {
+                flex-flow: row wrap;
+                margin: 0px 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteneur-flex">
+        <div class="sous-conteneur-flex">
+          <div class="element-flex">1</div>
+          <div class="element-flex">2</div>
+          <div class="element-flex">3</div>
+        </div>
+        <div class="sous-conteneur-flex">
+          <div class="element-flex">4</div>
+          <div class="element-flex">5</div>
+          <div class="element-flex">6</div>
+        </div>
+      </div>
+</body>
+
+</html>

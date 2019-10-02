@@ -1,0 +1,28 @@
+#layout {
+    background-color: black;
+    width:500px;
+    padding: 5px;
+    text-align: center;
+    color: ivory;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%)
+
+}
+
+.gauche {
+    text-align: left;
+}
+
+.droite{
+    text-align: right;
+}
+
+h2, button{
+    color: white;
+}
+
+button{
+    background-color: rgb(13, 13, 163)
+}

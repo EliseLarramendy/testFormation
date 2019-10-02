@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemple Formulaires</title>
+    <style>
+        label{
+            width:100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Les formulaires <a href="index.html"><i class='fas fa-coffee'></i></a></h1></header>
+    <section>
+        <h2>Formulaire 1</h2>
+        <form method="POST" action="mailto: " id="formPersonne" autocomplete="off">
+            <fieldset>
+                <legend>Informations nominatives</legend>
+            <label>Nom :</label>
+            <input name="nom" type="text" title="indiquez votre nom" placeholder="Indiquez votre nom, exemple:Dupond" /><br/><br/>
+            <label>Prénom :</label>
+            <input name="prénom" type="text"title="indiquez votre prénom" placeholder="Indiquez votre prénom, exemple:Dupond"/><br/><br/>
+            <label>Age : </label>
+            <input form="formPerson" name="age" type="number" title="indiquez votre age" min="0"max="18">
+            <br/><br/>
+            <input type="submit" value="Intégrer le groupe Café">
+        </fieldset>    
+        </form>
+        
+    </section>
+    
+</body>
+</html>
